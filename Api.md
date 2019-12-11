@@ -85,7 +85,8 @@ JWT
 
 * **Error Response**
 
-  Code: 500 Internal Serve Error<br />
+  Code: 422 Unprocessable Entity<br />
+  Code: 404 Not Found
  
 **JWT**
 ----
