@@ -1,0 +1,91 @@
+**Movies Library**
+----
+This is a rest API sending post request which accepts words that people search for. The API itself sends a post request to Microsoft Azure Bing Spell Check Cognitive service to check and tell the user to enter the correct spelling in a sentence.
+The output for the API is the incorrect spellings and the suggestions that Microsoft provides for them according to the sentence. 
+This rest API can be used by search engines as well as some front end editors where one can enter their text and check for spellings.
+
+The API also has a commented code for JWT authorization.
+
+
+**Technologies**
+
+Node.js
+Express
+JWT
+
+**Add Tasks**
+----
+
+* **URL**
+
+  http://165.227.64.216:3008/tasks
+
+* **Method**
+
+  `POST`
+
+* **Request Payload** *
+
+  Headers: 
+  
+  Content-Type: application/x-www-form-urlencoded
+  Authotization: Bearer [token]
+  Authorization commented out for JWT.<br />
+  
+  Body
+  
+* **URL Parameters** 
+
+  None
+  
+
+* **Success Response** 
+
+  Code: 201 Created <br />
+  tasks: wht is the ned
+  Response: {
+    {
+    "word": {
+        "_type": "SpellCheck",
+        "flaggedTokens": [
+            {
+                "offset": 0,
+                "token": "wht",
+                "type": "UnknownToken",
+                "suggestions": [
+                    {
+                        "suggestion": "what",
+                        "score": 0.8198592249919398
+                    }
+                ]
+            },
+            {
+                "offset": 11,
+                "token": "ned",
+                "type": "UnknownToken",
+                "suggestions": [
+                    {
+                        "suggestion": "end",
+                        "score": 0.8198592249919398
+                    },
+                    {
+                        "suggestion": "need",
+                        "score": 0.7433621926339501
+                    },
+                    {
+                        "suggestion": "net",
+                        "score": 0.6299178524623307
+                    }
+                ]
+            }
+        ]
+    }
+}
+}
+
+* **Error Response**
+
+  Code: 500 Internal Serve Error<br />
+  
+  
+  
