@@ -1,6 +1,6 @@
 **TaskChecker Using Azure Bing Spell Check**
 ----
-This is a rest API sending post request which accepts words that people search for. The API itself sends a post request to Microsoft Azure Bing Spell Check Cognitive service to check and tell the user to enter the correct spelling in a sentence.
+This is a rest API sending post request which takes in tasks that user wants to enter. The API itself sends a post request to Microsoft Azure Bing Spell Check Cognitive service to check and tell the user to enter the correct spelling in a sentence.
 The output for the API is the incorrect spellings and the suggestions that Microsoft provides for them according to the sentence. 
 This rest API can be used by search engines as well as some front end editors where one can enter their text and check for spellings.
 
