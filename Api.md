@@ -42,6 +42,7 @@ JWT
 * **Success Response** 
 
   Code: 201 Created <br />
+  input: key, value<br />
   tasks: wht is the ned<br />
   Response: {
     {
