@@ -21,9 +21,7 @@ let key = require("../config/AzureKey");
 //for those words with score/accuracy of that word being the match.
 //Commented out verifyAuth middleware function for JWT. 
  router.post("/", /*verifyAuth*/ (req, res, next)=>{
-     console.log(req.body.word);
-     const word = req.body.word;
-     console.log(word);
+     const word = req.body.task;
      let request_params = {
         method : 'POST',
         hostname : host,
@@ -36,13 +34,10 @@ let key = require("../config/AzureKey");
             Connection: 'Close'
             }
         };
-    console.log(request_params.method + JSON.stringify(request_params.headers));
     let re= https.request(request_params, function(response){
-        console.log("Hey");
         let body = '';
         response.on('data', function(chunk){
             body+=chunk;
-            console.log(body);
         });
         response.on('end', function(){
              let b = JSON.parse(body);
@@ -71,7 +66,7 @@ let key = require("../config/AzureKey");
     }   
 });
 
-// router.get('/signIn', (req, res)=>{
+// router.get('/jwt', (req, res)=>{
 //     let token = jwt.sign({
 //         email: req.body.email,
 //     },
