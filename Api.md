@@ -28,8 +28,8 @@ JWT
 
   Headers: 
   
-  Content-Type: application/x-www-form-urlencoded
-  Authotization: Bearer [token]
+  Content-Type: application/x-www-form-urlencoded<br />
+  Authotization: Bearer [token]<br />
   Authorization commented out for JWT.<br />
   
   Body
@@ -42,7 +42,7 @@ JWT
 * **Success Response** 
 
   Code: 201 Created <br />
-  tasks: wht is the ned
+  tasks: wht is the ned<br />
   Response: {
     {
     "word": {
@@ -86,6 +86,33 @@ JWT
 * **Error Response**
 
   Code: 500 Internal Serve Error<br />
+ 
+**JWT**
+----
+* **URL** 
+
+  http://165.227.64.216:3008/tasks/jwt
+
+* **Method** 
+
+  `GET`
+
+* **URL Parameters** 
+
+  None
+
+* **Data Parameters** 
+
+  None
+
+* **Success Response** 
+
   
+  {
+	"email":"pjhaver1@gmail.com"
+  }
+  <br />
+  Code: 200 OK <br />
+  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBqaGF2ZXIxQGdtYWlsLmNvbSIsImlhdCI6MTU3NjA4MTYwOX0._7XFT_0CK5xUeMVO-fwYDD2wHubdjIgIzDVxd1Y-nYo
   
   
