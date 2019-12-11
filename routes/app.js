@@ -42,7 +42,7 @@ let key = require("../config/AzureKey");
         response.on('end', function(){
              let b = JSON.parse(body);
              let jsomResp=JSON.stringify(b);
-             res.send({
+             res.status(201).send({
                  word: b
              });
         });
