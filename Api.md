@@ -1,4 +1,4 @@
-**Movies Library**
+**TaskChecker Using Azure Bing Spell Check**
 ----
 This is a rest API sending post request which accepts words that people search for. The API itself sends a post request to Microsoft Azure Bing Spell Check Cognitive service to check and tell the user to enter the correct spelling in a sentence.
 The output for the API is the incorrect spellings and the suggestions that Microsoft provides for them according to the sentence. 
