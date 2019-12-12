@@ -13,6 +13,23 @@ Node.js
 Express
 JWT
 
+* **Instruction to use API**
+
+  Url to enter in the postman:  http://165.227.64.216:3008/tasks<br />
+  Set headers: Content-Type to application/x-www-form-urlencoded<br />
+  Body<br />
+  key: task, value: any sentence or task you want to record.<br />
+  example: key: task
+  value: my wrk is not complted
+  
+  **For JWT**
+  
+  Code is commented out. <br />
+  Use url: http://165.227.64.216:3008/tasks/jwt <br />
+  Body:<br />
+  "email" : Any email you want to add to token.
+  Response is token. Add the token to the headers in http://165.227.64.216:3008/tasks as Authorzation.
+
 **Add Tasks**
 ----
 
@@ -38,7 +55,7 @@ JWT
 
   None
   
-
+ 
 * **Success Response** 
 
   Code: 201 Created <br />
