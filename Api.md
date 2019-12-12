@@ -13,8 +13,9 @@ Node.js
 Express
 JWT
 
-* **Instruction to use API**
-
+**Instruction to use API**
+  
+  * **For Task**
   Url to enter in the postman:  http://165.227.64.216:3008/tasks<br />
   Set headers: Content-Type to application/x-www-form-urlencoded<br />
   Body<br />
@@ -22,8 +23,7 @@ JWT
   example: key: task
   value: my wrk is not complted
   
-  **For JWT**
-  
+  * **For JWT**
   Code is commented out. <br />
   Use url: http://165.227.64.216:3008/tasks/jwt <br />
   Body:<br />
