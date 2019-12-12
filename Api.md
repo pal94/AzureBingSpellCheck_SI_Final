@@ -28,7 +28,7 @@ JWT
   Code is commented out. <br />
   Use url: http://165.227.64.216:3008/tasks/jwt <br />
   Request Type: Get<br />
-  Header: Content-Type: application/json
+  Header: Content-Type: application/json<br />
   Body:<br />
   "email" : Any email you want to add to token.
   Response is token. Add the token to the headers in http://165.227.64.216:3008/tasks as Authorzation.
