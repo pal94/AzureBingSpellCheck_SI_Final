@@ -17,20 +17,26 @@ JWT
   
   * **For Task**
    Url to enter in the postman:  http://165.227.64.216:3008/tasks<br />
-   Request Type: Post<br />
+   Set Request Type: Post<br />
    Set headers: Content-Type to application/x-www-form-urlencoded<br />
-   Body<br />
-   key: task, value: any sentence or task you want to record.<br />
-   example: key: task
+   In Body<br />
+   set key: task <br /> 
+   set value: any sentence or task you want to record.<br />
+   example: <br />
+   key: task<br />
    value: my wrk is not complted
   
   * **For JWT**
   Code is commented out. <br />
   Use url: http://165.227.64.216:3008/tasks/jwt <br />
-  Request Type: Get<br />
-  Header: Content-Type: application/json<br />
-  Body:<br />
+  Set Request Type: Get<br />
+  Set Header: Content-Type: application/json<br />
+  In Body:<br />
   "email" : Any email you want to add to token.
+  examaple:<br />
+  {
+  	"email": "abc@test.dev"
+  }
   Response is token. Add the token to the headers in http://165.227.64.216:3008/tasks as Authorzation.
 
 **Add Tasks**
