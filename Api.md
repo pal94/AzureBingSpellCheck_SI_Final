@@ -16,14 +16,14 @@ JWT
 **Instruction to use API**
   
   * **For Task**
-  Url to enter in the postman:  http://165.227.64.216:3008/tasks<br />
+   Url to enter in the postman:  http://165.227.64.216:3008/tasks<br />
 
-  Set headers: Content-Type to application/x-www-form-urlencoded<br />
-  Request Type: Post<br />
-  Body<br />
-  key: task, value: any sentence or task you want to record.<br />
-  example: key: task
-  value: my wrk is not complted
+   Set headers: Content-Type to application/x-www-form-urlencoded<br />
+   Request Type: Post<br />
+   Body<br />
+   key: task, value: any sentence or task you want to record.<br />
+   example: key: task
+   value: my wrk is not complted
   
   * **For JWT**
   Code is commented out. <br />
