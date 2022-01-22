@@ -17,7 +17,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.14",
     "ms-rest-js": "^1.0.1",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "nodemon": "^2.0.1",
     "validator": "^12.1.0"
   }
